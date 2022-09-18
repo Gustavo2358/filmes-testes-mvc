@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+</head>
+<body>
+    <h1>Criar Filme</h1>
+    <form class="form" method="post" >
+        <input type="text" name="nome" placeholder="nome">
+        <input type="text" name="genero" placeholder="genero">
+        <input type="text" name="ano_lancamento" placeholder="ano de lançamento">
+        <div class="atores">
+            <button type="button" id="add">Adicionar Ator</button>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <a href="/"><button>pagina inicial</button></a>
+    <br>
+    <a href="/create-actor"><button>criar ator</button></a>
+
+    <script src="/js/create-movie.js" ></script>
+</body>
+</html>
