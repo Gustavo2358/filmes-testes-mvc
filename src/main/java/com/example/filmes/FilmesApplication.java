@@ -24,17 +24,17 @@ public class FilmesApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Ator mark = new Ator("Mark Hammil");
-        Ator carrie = new Ator("Carrie Fisher");
-
-        Filme starWars = new Filme("Star Wars", "Sci-fi", "1977");
-
-        mark.getFilmes().add(starWars);
-        carrie.getFilmes().add(starWars);
-//        starWars.getAtores().addAll(Arrays.asList("Carrie Fisher", "Mark Hammil", "Harrison Ford"));
-
-        filmeRepository.save(starWars);
-        atorRepository.saveAll(Arrays.asList(mark, carrie));
+//        Ator mark = new Ator("Mark Hammil");
+//        Ator carrie = new Ator("Carrie Fisher");
+//
+//        Filme starWars = new Filme("Star Wars", "Sci-fi", "1977");
+//
+//        mark.getFilmes().add(starWars);
+//        carrie.getFilmes().add(starWars);
+////        starWars.getAtores().addAll(Arrays.asList("Carrie Fisher", "Mark Hammil", "Harrison Ford"));
+//
+//        filmeRepository.save(starWars);
+//        atorRepository.saveAll(Arrays.asList(mark, carrie));
 
     }
 }

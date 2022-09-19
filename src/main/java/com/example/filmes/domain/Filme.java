@@ -28,7 +28,7 @@ public class Filme {
     private String anoLancamento;
 
     @JsonManagedReference
-    @ManyToMany(mappedBy = "filmes")
+    @ManyToMany(mappedBy = "filmes", fetch = FetchType.EAGER)
     @JsonIgnore
     private List<Ator> atores = new ArrayList<>();
 

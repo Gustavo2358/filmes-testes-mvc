@@ -18,7 +18,7 @@ public class Ator {
     private String nome;
 
     @JsonBackReference
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "atores_filmes",
             joinColumns = @JoinColumn(name = "ator_id"),
